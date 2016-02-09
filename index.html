@@ -1,0 +1,32 @@
+---
+layout: page
+title: Home
+permalink: /
+---
+
+<div class="home">
+
+<p>
+    We at A Place Called Up Consulting are a Java and a Python software engineer with sometimes quite different perspectives on things such as best practices and software architecture. This can on occasions lead to some argueing, but more often than not, it enriches our discussions and leads to new insights and "aha" moments. From time to time, we run into smaller (or bigger) roadblocks and we though maybe the problems we encounter and the solutions we come up with might be of interest to other programmers.
+</p>
+<hr/>
+
+  <h2>Latest Posts</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <p>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </p>
+      <p>
+          {{ post.summary }} <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+      </p>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>

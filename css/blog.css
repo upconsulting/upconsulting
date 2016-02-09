@@ -1,0 +1,17 @@
+.post-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.post-list li p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.post-meta {
+    font-size: 12px;
+}
+
+.post-title {
+    margin-bottom: 0;
+}

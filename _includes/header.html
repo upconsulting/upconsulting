@@ -1,0 +1,17 @@
+<ul>
+	<li class="special">
+		<a href="#menu" class="menuToggle"><span>Menu</span></a>
+		<div id="menu">
+			<ul>
+                {% for page in site.pages %}
+                  {% if page.title %}
+                  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+
+				<li><a href="http://aplacecalledup.com">A Place Called Up Consulting</a></li>
+
+			</ul>
+		</div>
+	</li>
+</ul>

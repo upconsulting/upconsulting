@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="12u 12u(small)">
+
+
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    {% if page.project %} in <i>{{ page.project }}</i> {% endif %}
+    </p>
+
+  <p class="post-content">
+    {{ content }}
+</p>
+
+</div>
+</div>
